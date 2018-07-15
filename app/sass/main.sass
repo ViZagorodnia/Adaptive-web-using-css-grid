@@ -1,0 +1,245 @@
+@import "fonts"
+@import "base"
+@import "vars"
+
+.menuIcon
+	display: none
+	color: $limo
+
+.grid 
+	display: grid
+
+.grid.headline
+	grid-template-columns: 15% auto 15%
+	
+
+.logo-name
+	font-family: aquatico-cusine
+	font-size: 3em
+	color: $roze
+	justify-self: center
+	margin: .3em
+
+.adress
+	p 
+		padding-left: 32px
+		margin: 0
+		font-size: 1.3em
+
+.adress,
+.social
+	margin-top: 25px
+	line-height: 1.2em
+
+.social
+	font-size: 1.7em
+	justify-self: end
+	padding-right: 32px
+	i
+		&:hover
+			color: #824CA7
+
+.navbarList
+	grid-template-columns: repeat(5, auto)
+	list-style-type: none
+	font-size: 2em
+	margin: 5px 0 0 0
+	padding-left: 0
+	border: 1px solid $light_grey
+	justify-items: stretch
+
+
+.navbarList
+	li 
+		justify-self: center
+		transition: color .9s ease
+		transition: font-weight .3s ease
+		&:hover
+			color: #824CA7
+			font-weight: 600
+ul
+	margin: 0
+
+.headerimg
+	background: url(../img/header.jpg)
+	background-size: cover
+	background-position: center
+	height: 350px
+/* Story container */
+.stories_cont 
+	grid-template-columns: 1fr 1fr
+	padding: 20px
+	grid-gap: 20px
+	margin-top: 30px
+	border-bottom: solid 1px $light_grey
+
+.stories
+	min-height: 40vh
+	background-size: cover
+	background-position: center
+	align-content: start
+	h3
+		font-size: 1.5em
+		font-family: aquatico-cusine
+		color: $violett
+	p 
+		font-size: 1.5em
+		margin-top: 0
+	&:nth-child(2),
+	&:nth-child(3)
+		border: solid 1px $light_grey
+		border-radius: 12px
+
+.menu
+	height: 400px
+	background-size: cover
+	background-position: center
+	align-content: center
+	justify-items: center
+	border-radius: 12px
+	margin-top: 20px
+	position: relative
+	margin-bottom: $gutter
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background-color: #fff
+		opacity: .44
+.menu_button
+	font-family: aquatico-cusine
+	color: #D50B53
+	font-size: 3em
+	background-color: $darkwhite
+	border: solid 1px $light_grey
+	border-radius: 12px
+	padding: 10px 50px
+	z-index: 2
+	transition: background-color .5s ease
+	&:hover
+		background-color: darken($violett, 15%)
+		color: $darkwhite
+
+.text_block
+	font-family: fabfeltscript-cusine
+	font-size: 2em
+	color: $limo
+	justify-items: center
+	align-items: center
+	height: auto
+	margin-bottom: $gutter
+	text-align: center
+
+.reservation
+	height: 300px
+	background-size: cover
+	background-position: center
+	align-items: center
+
+.reservation_button
+	margin: 0 auto
+	padding: 2px 25px
+	border: solid #707070 1px
+	height: 1.9em
+	margin-top: $gutter
+	color: $darkwhite
+	font-family: aquatico-cusine
+	font-size: 2em
+	background-color: rgba(45,20,23, .5)
+	border-radius: 8px
+	transition: background-color .5s ease
+	&:hover
+		background-color: rgba($darkwhite, .5)
+		color: $roze
+
+.reserv_group
+	grid-template-columns: repeat(4, auto)
+	grid-template-rows: 50px
+	grid-column-gap: $gutter*2
+	justify-content: center
+	.reserv
+		width: 150px
+		border-radius: 8px
+		border: solid #707070 1px	
+		height: 1.5em
+		font-size: 1.8em
+		font-family: coves-light-cusine
+		font-color: $greycol
+	#tablepick
+		width: 150px
+		overflow: 
+		height: 1.5em
+		font-size: 1.8em
+		border-radius: 8px
+		font-family: coves-light-cusine
+		color: $greycol
+		option
+			font-size: .7em
+	#datepicker
+		text-align: center
+	#timepicker
+		color: $greycol
+		text-align: center
+	.but_res
+		font-family: coves-bold-cusine
+		color: $darkwhite
+		background-color: $limo
+		transition: background-color .5s ease
+		&:hover
+			color: $darkwhite
+			background-color: $roze
+
+.online_order
+	height: 400px
+	background-size: cover
+	background-position: center
+	margin-top: $gutter*3
+	border-radius: 12px
+	justify-content: right
+	.online_question
+		font-family: coves-bold-cusine
+		font-size: 2.5em
+		text-align: center
+		line-height: 1em
+		padding-right: 2em
+		padding-top: 1em
+	.onlineOrder_button
+		font-family: coves-bold-cusine
+		color: $darkwhite
+		font-size: 2.2em
+		height: 1.8em
+		width: 7em
+		background-color: $roze
+		border-radius: 12px
+		transition: background-color .5s ease
+		&:hover
+			background-color: $limo
+.foot_item
+		align-self: center
+		&:hover
+			color: $roze
+footer
+	grid-template-columns: 35% auto auto auto
+	background-color: $limo
+	color: $darkwhite
+	font-size: 1.3em
+	margin-top: $gutter*2
+	line-height: 1em
+	padding: $gutter $gutter*2
+	div:first-of-type
+		grid-row: 1/4
+		margin-right: 3em
+		padding-left: $gutter*2
+		width: 70%
+		p 
+			font-size: .8em
+			&:hover
+			color: $darkwhite	
+		h3
+			color: $roze
+			margin-top: 0
+
+@import "media"

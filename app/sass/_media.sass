@@ -1,0 +1,207 @@
+@import "vars"
+
+@media only screen and (max-width: 992px)
+	.logo-name
+		font-size: 2em
+		margin-top: .8em
+	
+	.grid.headline
+		grid-template-columns: 20% auto 20%
+	
+	.adress
+		p 
+			padding-left: 0px
+	
+	.social
+		padding-right: 0px
+
+	.navbarList
+		font-size: 1.5em
+
+	.stories
+		height: 250px
+		h3
+			font-size: 1em
+		p 
+			font-size: 1.3em
+			line-height: 1.2em
+
+	.menu
+		height: 350px
+		.menu_button
+			font-size: 2.6em
+
+	.text_block
+		font-size: 1.8em
+
+	.online_order
+		height: 350px
+
+	
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+	.adress
+		font-size: .8em
+	.social
+		font-size: 1.2em
+	.navbarList
+		li 
+			font-size: .9em
+	.stories
+		h3
+			font-size: .9em
+		p 
+			font-size: 1.1em
+			line-height: 1.2em
+	.text_block
+		font-size: 1.4em
+	.reservation
+		height: 250px
+	.reservation_button
+		font-size: 1.8em
+	.reserv_group
+		grid-column-gap: 8px
+		.reserv,
+		#tablepick
+			font-size: 1.4em
+			width: 130px
+			border-radius: 5px
+			border-color: darken($darkwhite, 25%)
+	.online_order
+		width: 90%
+		font-size: .8em
+	footer
+		grid-template-columns: 45% auto auto auto
+		font-size: 1.1em	
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 590px)
+	.logo-name
+		font-size: 1.6em
+		margin-top: .8em
+	.headline
+		width: 95%
+	.navbarList
+		li 
+			font-size: .7em
+	.headerimg
+		height: 200px
+	.stories_cont
+		margin-top: 10px
+		grid-template-columns: 1fr
+		grid-template-rows: 195px auto 150px auto
+		grid-auto-flow: row
+		
+	.stories
+		&:nth-child(3)
+			grid-row-start: 4
+
+	.menu
+		height: 150px
+		.menu_button
+			font-size: 1.5em
+	.text_block
+		font-size: 1.2em
+	
+	.reservation
+		height: auto
+	.reservation_button
+		font-size: 1.5em
+		margin-bottom: 15px
+	.reserv_group
+		grid-row-gap: 8px
+		grid-template-columns: 1fr
+		grid-template-rows: initial
+		justify-items: center
+		padding-bottom: 15px
+		.reserv,
+		#tablepick
+			width: 230px
+			text-align: center
+
+	.online_order
+		height: 250px
+		font-size: .6em
+		.online_question
+			padding-right: .3em
+		.onlineOrder_button
+			margin-right: 15px
+			border-radius: 8px
+	footer
+		grid-template-columns: 45% auto auto auto
+		font-size: 1em
+		justify-items: stretch
+		padding: 5px
+		div:first-of-type
+			margin-right: .6em
+			padding-left: 10px
+			width: 80%
+			p 
+				font-size: .9em
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width : 480px)
+	.grid.headline
+		grid-template-columns: auto 25%
+	.adress
+		display: none
+	.social
+		margin-top: 30px
+
+	.logo-name
+		justify-self: end
+	.navbar
+		position: relative
+	.menuIcon
+		display: inline-block
+		font-size: 2em
+		position: absolute
+		top: 15px
+		left: 6px
+
+	.navbarList
+		display: none
+		grid-template-columns: 1fr
+		grid-template-rows: repeat(5, auto)
+		font-size: 2em
+		li 
+			border: solid darken($darkwhite, 5%) 1px
+			width: 100%
+			text-align: center
+			background-color: rgba($darkwhite, .5)
+			&:hover
+				background-color: $limo
+				color: $darkwhite
+	.stories
+		h3
+			font-size: 1em
+		p 
+			font-size: 1em
+			line-height: 1.2em
+	.stories_cont
+		grid-template-rows: 235px auto 190px auto
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
